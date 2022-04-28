@@ -44,6 +44,15 @@ function Dashboard() {
         </div>
         <div className="mt-3">
           <input
+            type="text"
+            className="border-[1px] p-2 text-lg border-black w-full"
+            value={status}
+            placeholder="Pool status"
+            onChange={(e) => setStatus(e.target.value)}
+          />
+        </div>
+        <div className="mt-3">
+          <input
             type="file"
             className="border-[1px] p-2 text-lg border-black"
             onChange={(e) => setFile(e.target.files[0])}
