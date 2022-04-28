@@ -69,15 +69,7 @@ function Dashboard() {
             onChange={(e) => setVertical(e.target.value)}
           />
         </div>
-        <div className="mt-3">
-          <input
-            type="text"
-            className="border-[1px] p-2 text-lg border-black w-full"
-            value={country}
-            placeholder="Pool country"
-            onChange={(e) => setCountry(e.target.value)}
-          />
-        </div>
+        
         <div className="mt-3">
           <input
             type="number"
