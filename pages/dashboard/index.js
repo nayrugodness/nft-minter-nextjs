@@ -89,6 +89,15 @@ function Dashboard() {
         </div>
         <div className="mt-3">
           <input
+            type="number"
+            className="border-[1px] p-2 text-lg border-black w-full"
+            value={founding}
+            placeholder="Inicial pool founding"
+            onChange={(e) => setFounding(e.target.value)}
+          />
+        </div>
+        <div className="mt-3">
+          <input
             type="file"
             className="border-[1px] p-2 text-lg border-black"
             onChange={(e) => setFile(e.target.files[0])}
