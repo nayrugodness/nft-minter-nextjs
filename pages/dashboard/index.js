@@ -8,6 +8,11 @@ function Dashboard() {
   const { isAuthenticated, logout, user } = useMoralis();
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [status, setStatus] = useState("");
+  const [country, setCountry] = useState("");
+  const [vertical, setVertical] = useState("");
+  const [studentCount, setStudentCount] = useState(0);
+  const [founding, setFounding] = useState(0);
   const [file, setFile] = useState(null);
   const router = useRouter();
   const onSubmit = async (e) => {
