@@ -71,6 +71,24 @@ function Dashboard() {
         </div>
         <div className="mt-3">
           <input
+            type="text"
+            className="border-[1px] p-2 text-lg border-black w-full"
+            value={country}
+            placeholder="Pool country"
+            onChange={(e) => setCountry(e.target.value)}
+          />
+        </div>
+        <div className="mt-3">
+          <input
+            type="number"
+            className="border-[1px] p-2 text-lg border-black w-full"
+            value={studentCount}
+            placeholder="Student Count"
+            onChange={(e) => setStudentCount(e.target.value)}
+          />
+        </div>
+        <div className="mt-3">
+          <input
             type="file"
             className="border-[1px] p-2 text-lg border-black"
             onChange={(e) => setFile(e.target.files[0])}
